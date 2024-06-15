@@ -8,8 +8,8 @@ const DisplaySwitch = ({countries, countriesToShow, handleShowButton, handleSetW
       return (
         countriesToShow.map(country =>
           <div className="row mt-3" key={country.name.official}>
-            <span className="col-2">{country.name.common}</span> 
-            <button className="btn btn-info col-1" onClick={() => handleShowButton(country.name.common)}>show</button>
+            <span className="col-md-2 col-6">{country.name.common}</span> 
+            <button className="btn btn-info col-md-3 col-6" onClick={() => handleShowButton(country.name.common)}>show</button>
           </div>
         )
       )
